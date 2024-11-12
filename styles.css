@@ -4,12 +4,12 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /*leuko xrwma*/
 }
 
 /* Header Styles (Lab 1) */
 header {
-  background-color: #50b3a2;
+  background-color: #ef6aaf; /*colourlovers.com gia na vrw mia paleta gia to site*/
   color: #fff;
   padding: 30px;
   text-align: center;
