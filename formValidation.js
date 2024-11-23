@@ -12,21 +12,25 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     // Check for empty fields and email format
     if (!name) {
         alert('Please enter your full name.');
+        document.querySelector('input[name="fullname"]').style.borderColor = 'red'; // Change the border color to red for empty fields
         return;
     }
 
     if (!email) {
         alert('Please enter your email address.');
+        document.querySelector('input[name="email"]').style.borderColor = 'red'; // Change the border color to red for empty fields
         return;
     }
 
     if (!emailPattern.test(email)) {
         alert('Please enter a valid email address.');
+        document.querySelector('input[name="email"]').style.borderColor = 'red'; // Change the border color to red for invalid email
         return;
     }
 
     if (!message) {
         alert('Please enter your message.');
+        document.querySelector('textarea[name="message"]').style.borderColor = 'red'; // Change the border color to red for empty message
         return;
     }
 
@@ -34,7 +38,11 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     document.getElementById('contactForm').style.display = 'none';
     document.getElementById('thankYouMessage').style.display = 'block';
 
-    console.log('Form validated and ready to submit.');
+    // Change the background color of the thank-you message
+    document.getElementById('thankYouMessage').style.backgroundColor = '#5fcac3'; // Change to a color you like
+
+    // Optionally change the color of the text in the thank-you message
+    document.getElementById('thankYouMessage').style.color = 'white';
 
     // Submit the form
     this.submit(); // Let Netlify handle the form submission
