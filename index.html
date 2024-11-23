@@ -1,27 +1,101 @@
-<section id="contact">
-    <h3 class="h3 form-title">Contact Form</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe</title>
+    <!-- Link to the CSS file (Lab 1 will focus on styling) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <!-- Thank you message -->
-    <div id="thankYouMessage" style="display: none;">
-        <p>Thank you for your message! I will get back to you soon.</p>
-    </div>
+    <!-- Header Section (Lab 1) -->
+    <header>
+        <!-- Placeholder image for the profile picture -->
+        <img src="photo.jpg" alt="Avatar" width="150">
+        <h1>Jane Doe</h1>
+        <p>Aspiring Software Developer</p>
+        
+    </header>
 
-    <!-- Form setup for Netlify -->
-    <form name="contactForm" method="POST" netlify netlify-honeypot="bot-field" id="contactForm" data-netlify="true">
-        <input type="hidden" name="form-name" value="contactForm">
+    <!-- About Me Section (Lab 1) -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit nibh id lorem tristique, in efficitur neque posuere. Quisque in feugiat nisl, a laoreet neque. Curabitur ac sem nec lorem mattis semper a sit amet leo. Sed pellentesque urna lorem, vel bibendum nisi convallis quis. Mauris nulla nisl, pellentesque vitae semper ac, auctor sed dui. Vestibulum varius facilisis dapibus. Phasellus et porttitor mi. Nam nisi lorem, dignissim ac odio non, efficitur volutpat ligula. Mauris dui elit, suscipit vitae ullamcorper id, lacinia vel metus. Phasellus feugiat tincidunt velit, et bibendum massa convallis sed.</p>
+        <p>Duis efficitur faucibus condimentum. Curabitur eleifend nulla elit, in finibus lectus ornare sit amet. Vestibulum et urna et lacus ultricies sollicitudin. Vivamus condimentum placerat enim, ut lacinia nulla porttitor ut. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Praesent faucibus mollis nisi, non commodo quam tempus in. Curabitur id nulla venenatis elit cursus placerat. Praesent placerat sollicitudin lorem, a tincidunt dolor egestas sed. </p></p>
+    </section>
 
-        <div class="input-wrapper">
-            <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
-            <input type="email" name="email" class="form-input" placeholder="Email address" required>
+    <!-- Resume Section (Lab 1) -->
+    <section id="resume">
+        <h2>Resume</h2>
+
+        <h3>Education</h3>
+        <ul>
+            <li>B.Sc. in Computer Science, XYZ University (2022 - Present)</li>
+        </ul>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>Programming Languages: Python, JavaScript, C++</li>
+            <li>Web Development: HTML, CSS, React</li>
+        </ul>
+
+        <h3>Experience</h3>
+        <ul>
+            <li>Intern at ABC Tech Solutions (Summer 2023)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section (Lab 1) -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <h3>Portfolio Website</h3>
+        <p>A personal website to showcase my projects and skills.</p>
+        <a href="https://github.com/janedoe/portfolio-website" target="_blank">View on GitHub</a>
+
+        <h3>Weather App</h3>
+        <p>A web application that displays weather information using an external API.</p>
+        <a href="https://github.com/janedoe/weather-app" target="_blank">View on GitHub</a>
+    </section>
+
+    <!-- Contact Me Section (Lab 3) -->
+    <section id="contact">
+        <h3 class="h3 form-title">Contact Form</h3>
+
+        <!-- Thank you message -->
+        <div id="thankYouMessage" style="display: none;">
+            <p>Thank you for your message! I will get back to you soon.</p>
         </div>
 
-        <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+        <!-- Form setup for Netlify -->
+        <form name="contactForm" method="POST" netlify netlify-honeypot="bot-field" id="contactForm" data-netlify="true">
+            <input type="hidden" name="form-name" value="contactForm">
 
-        <!-- Add the form-btn class here -->
-        <button class="form-btn" type="submit">
-            <ion-icon name="paper-plane"></ion-icon>
-            <span>Send Message</span>
-        </button>
-    </form>
-</section>
-<script src="formValidation.js"></script>
+            <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+
+            <!-- Add the form-btn class here -->
+            <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+            </button>
+        </form>
+    </section>
+    <script src="formValidation.js"></script>
+
+    <!-- Footer Section (Lab 1) -->
+    <footer>
+        <p>&copy; 2023 Jane Doe</p>
+        <a href="https://www.linkedin.com/in/janedoe" target="_blank">LinkedIn</a> |
+        <a href="https://florentiasportfolio.netlify.app/" target="_blank">GitHub</a>
+    </footer>
+
+    <!-- Σύνδεση με το αρχείο JavaScript -->
+    <script src="formValidation.js"></script>
+</body>
+</html>
