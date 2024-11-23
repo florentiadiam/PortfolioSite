@@ -1,6 +1,7 @@
+/*colourlovers.com gia na vrw mia paleta gia to site*/
 /* General Styles (Lab 1) */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Lora', serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -9,7 +10,7 @@ body {
 
 /* Header Styles (Lab 1) */
 header {
-  background-color: #ef6aaf; /*colourlovers.com gia na vrw mia paleta gia to site*/
+  background-color: #F56991; /*colourlovers.com gia na vrw mia paleta gia to site*/
   color: #fff;
   padding: 30px;
   text-align: center;
@@ -18,10 +19,13 @@ header {
 header h1 {
   margin: 0;
   font-size: 48px;
+  font-family: 'Playfair Display', serif;
+
 }
 
 header p {
   font-size: 20px;
+  font-family: 'Lora', serif;
 }
 
 /* Profile Image Styling (Lab 1) */
@@ -35,54 +39,75 @@ section {
   padding: 20px;
   background-color: #fff;
   margin: 20px;
+  font-family: 'Lora', serif;
 }
 
 section h2 {
-  border-bottom: 2px solid #e8491d;
+  border-bottom: 2px solid #F56991;
   padding-bottom: 10px;
 }
 
 /* About Me Section Styling (Lab 1) */
 section#about {
-  background-color: #e2e2e2;
+  background-color: #d0ecea94;
+  font-family: 'Lora', serif;
 }
 
 /* Resume Section Styling (Lab 1) */
 section#resume ul {
   list-style-type: none;
   padding: 0;
+  font-family: 'Lora', serif;
 }
 
 section#resume li {
-  background-color: #f4f4f4;
+  background-color: #afe4e131;
   margin-bottom: 5px;
   padding: 10px;
-  border-left: 4px solid #50b3a2;
+  border-left: 4px solid #FF9F80;;
+  font-family: 'Lora', serif;
+}
+section#resume .bullets {
+  background-color: transparent;
+  margin-bottom: 5px;
+  padding: 1px;
+  border-left: 4px;
+  font-family: 'Lora', serif;
+  border-left: none;
+}
+
+#resume li h4 {
+  font-family: 'Lora', serif;
+  font-weight: bold;  /* Makes the header bold */
+  font-size: 20px;  /* Adjust font size as needed */
+  margin-bottom: 10px;  /* Adds space below the header */
 }
 
 /* Project Section Styling (Lab 1) */
 section#projects a {
   display: inline-block;
   margin-top: 10px;
-  color: #50b3a2;
+  color: #FF9F80;
   text-decoration: none;
+  font-family: 'Lora', serif;
 }
 
 section#projects a:hover {
   text-decoration: underline;
+  font-family: 'Lora', serif;
 }
 
 /* Contact Form Styling (Lab 1) */
 form {
-  background-color: #f4f4f4;
+  background-color: #d0eceab3;
   padding: 20px;
-  border-radius: 5px;
 }
 
 form label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  font-family: 'Lora', serif;
 }
 
 form input[type="text"],
@@ -93,10 +118,11 @@ form textarea {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-family: 'Lora', serif;
 }
 
 .form-btn {
-  background-color: #50b3a2;
+  background-color: #F56991;
   color: #fff;
   border: none;
   padding: 15px 30px;
@@ -107,17 +133,18 @@ form textarea {
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease; 
+  font-family: 'Lora', serif;
 }
 
 .form-btn:hover {
-  background-color: #3e8e7e;
+  background-color: #5fcac3;
 }
 
 /* Submit Button Styling */
 form input[type="submit"],
 .form-submit {
-  background-color: #50b3a2;
-  color: #fff;
+  background-color: #5fcac3;
+  color: #d0eceab3;
   border: none;
   padding: 15px 30px;
   cursor: pointer;
@@ -125,11 +152,12 @@ form input[type="submit"],
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Lora', serif;
 }
 
 form input[type="submit"]:hover,
 .form-submit:hover {
-  background-color: #3e8e7e;
+  background-color: #5fcac3;
 }
 
 /* Footer Styles (Lab 1) */
@@ -139,6 +167,7 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 20px;
+  font-family: 'Lora', serif;
 }
 
 footer a {
