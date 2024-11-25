@@ -10,7 +10,8 @@ body {
 
 /* Header Styles (Lab 1) */
 header {
-  background-color: #F56991; /*colourlovers.com gia na vrw mia paleta gia to site*/
+  /*background-color: #F56991; /*colourlovers.com gia na vrw mia paleta gia to site*/
+  background: linear-gradient(120deg, #ff2a68, #00d2ff);
   color: #fff;
   padding: 30px;
   text-align: center;
@@ -61,10 +62,10 @@ section#resume ul {
 }
 
 section#resume li {
-  background-color: #afe4e131;
+  background-color: #fff0f6d2;
   margin-bottom: 5px;
   padding: 10px;
-  border-left: 4px solid #FF9F80;;
+  border-left: 4px solid #87cefa;
   font-family: 'Lora', serif;
 }
 section#resume .bullets {
@@ -87,7 +88,7 @@ section#resume .bullets {
 section#projects a {
   display: inline-block;
   margin-top: 10px;
-  color: #FF9F80;
+  color: #00d2ff;
   text-decoration: none;
   font-family: 'Lora', serif;
 }
@@ -99,7 +100,7 @@ section#projects a:hover {
 
 /* Contact Form Styling (Lab 1) */
 form {
-  background-color: #d0eceab3;
+  background-color: #87cefa;
   padding: 20px;
 }
 
@@ -144,7 +145,7 @@ form textarea {
 form input[type="submit"],
 .form-submit {
   background-color: #5fcac3;
-  color: #d0eceab3;
+  color: #87cefa;
   border: none;
   padding: 15px 30px;
   cursor: pointer;
@@ -162,7 +163,7 @@ form input[type="submit"]:hover,
 
 /* Footer Styles (Lab 1) */
 footer {
-  background-color: #35424a;
+  background-color: #87cefa;
   color: #f4f4f4;
   text-align: center;
   padding: 20px;
@@ -194,4 +195,34 @@ footer a:hover {
   .form-submit {
     width: 100%;
   }
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  border: 2px solid #F56991;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-out;
+}
+
+.fade-in-delay {
+  animation: fadeIn 3s ease-out 0.5s; /* Delay of 0.5 seconds */
+
+
 }
