@@ -31,11 +31,16 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     }
     
     //Validation message if the user is sure he wants to send it
-    const confirmation = confirm(`Are you sure you want to send this message?\n\n Name: ${name}\nEmail: ${email}\n Message: ${message}`);
 
-    if (confirmation) {
-        const mailtoLink = `mailto:${email}?subject=Contact from ${name}&body=${encodeURIComponent(message)}`;
-        window.location.href = mailtoLink;
+    const confirmation = `
+        Are you sure you want to send this message?
+        Name: ${name}
+        Email: ${email}
+        Message: ${message}
+    `;
+
+    if (confirm(confirmation)) {
+        this.submit();
     } else {
         alert('The submission was cancelled.');
     }
