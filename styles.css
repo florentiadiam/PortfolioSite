@@ -309,3 +309,19 @@ footer a:hover {
   gap: 20px;
 }
 
+#thankYouMessage {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #f7b1c3;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.thank-you-text {
+  font-size: 1.5em;
+  color: #c293d8;
+  font-family: 'Lora', serif;
+}
