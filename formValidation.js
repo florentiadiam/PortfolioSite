@@ -29,17 +29,26 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         alert('Please enter your message.');
         return;
     }
+    
+    //Validation message if the user is sure he wants to send it
+    const confirmation = confirm(`Are you sure you want to send this message?\n\n Name: ${name}\nEmail: ${email}\n Message: ${message}`);
 
-    // Hide the form and display the thank-you message
+    if (confirmation) {
+        const mailtoLink = `mailto:${email}?subject=Contact from ${name}&body=${encodeURIComponent(message)}`;
+        window.location.href = mailtoLink;
+    } else {
+        alert('The submission was cancelled.');
+    }
+    
     document.getElementById('contactForm').style.display = 'none';
     document.getElementById('thankYouMessage').style.display = 'block';
 
     console.log('Form validated and ready to submit.');
 
-    // Submit the form
-    this.submit(); // Let Netlify handle the form submission
+   
+    this.submit(); 
 
-    // Reload the page after 5 seconds (optional)
+    // Reload the page after 5 seconds
     setTimeout(function() {
         if (document.getElementById('thankYouMessage').style.display === 'block') {
             location.reload();
