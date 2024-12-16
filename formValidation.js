@@ -40,20 +40,4 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         alert('The submission was cancelled.');
     }
     
-    document.getElementById('contactForm').style.display = 'none';
-    document.getElementById('thankYouMessage').style.display = 'block';
-
-    console.log('Form validated and ready to submit.');
-
-   
-    this.submit(); 
-
-    // Reload the page after 5 seconds
-    setTimeout(function() {
-        if (document.getElementById('thankYouMessage').style.display === 'block') {
-            location.reload();
-        }
-    }, 5000);
-
-
 });
