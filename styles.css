@@ -42,7 +42,7 @@ header p {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 117px;
+    top: 185px;
 }
 
 .profile-container img {
@@ -51,7 +51,7 @@ header p {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid white;
-    transform: translateX(265px);
+    transform: translateX(260px);
 }
 
 .about-container {
