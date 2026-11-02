@@ -39,19 +39,19 @@ header p {
   text-align: center; 
 }
 .profile-container {
-  display: flex;
-  justify-content: center;
-  position: relative; 
-  top: 117px; 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 117px;
 }
 
 .profile-container img {
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid white; 
-  transform: translateX(265px);
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    transform: translateX(265px);
 }
 
 .about-container {
